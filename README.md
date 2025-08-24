@@ -26,3 +26,32 @@ Kullanım Alanı
 Hub/Lobby sunucuları: Oyuncular farklı modlara geçerken envanterlerinin kaybolmaması için
 Survival veya RPG sunucuları Oyuncu ilerlemesini güvenli şekilde saklamak için
 Folia/Paper sunucuları Modern asenkron destekli güvenli veri kaydı için
+
+
+örnek config.yl
+# Oyuncu verilerinin saklanacağı dizin yolu sunucunun ana dizinine veya belirli bir mutlak yol üzerinden belirlenebilir
+# Bu yolu sunucunun ana klasörüne göre belirtebilirsiniz
+# --
+# --
+# -- 
+# bu kısım öncelikle anlatayım kısaca bu kısım sizin bilgisiyarınızın vdsinizin filesynçinventory verilerinin hangi dizinde tutacağınız eğer 2 farklı 
+# sunucuya aynı yerdeki veri dosyasına seçerseniz o 2 sunucu arası envanter aktarımı sağlanır bu mysql içermeyen tamamen localde özel barındırmak için yapıldı discord: canreolo
+data_path: "C:/Users/can58/Desktop/FileSyn" #can58 yazan yeri bilgisiyarın kullanıcı adını yazınız o kısım değişse yeterlidir.
+
+# bu kısımda ise öncelikle hangi verilerin datalanmasını istemiyorsanız ayarını false yapınız true ise aktarım çalışıyor demektir
+sync_data:
+  inventory: true
+  enderchest: true
+  health: true
+  food_level: true
+  experience: true
+  potion_effects: true
+  gamemode: true # dünyalar arası geçiş yaparken veya sunucular geçişlerinde gamemode değerlerini koruması yani bir sunucuda survivaldaysan sunucu değiştiğinde gamemodu korur ama false yaparsan korumaz
+
+disabled_worlds: # bu ayar ise filesynç olan sunucuda hangi dünyalarda envanter aktarımı olmaması kısaca seçtiğin dünyada veriler senkrolize olmaz kaydetmez
+  - 'duel'
+
+# otomatik olarak  kaydetme ayarlarınız minimum 0.2 önerilir aksi takdirde eklenti çok yük bindiği için bozulabilir
+auto_save_interval:
+  enabled: true 
+  seconds: 0.5
