@@ -1,0 +1,9 @@
+name: FileSyncInventory
+version: '1.0.1'
+main: org.example1.fileSyncInventory.FileSyncInventory
+api-version: '1.21'
+prefix: FileSynçİnventory
+authors: [CanXD]
+description: Sunucular Arası Envanter Aktarımı Eklentisi Sadece Local İçindir
+folia-supported: true
+website: www.limenw.com
