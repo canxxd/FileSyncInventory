@@ -26,25 +26,3 @@ Kullanım Alanı
 Hub/Lobby sunucuları: Oyuncular farklı modlara geçerken envanterlerinin kaybolmaması için
 Survival veya RPG sunucuları Oyuncu ilerlemesini güvenli şekilde saklamak için
 Folia/Paper sunucuları Modern asenkron destekli güvenli veri kaydı için
-
-
-örnek config.yml
------------------------------------------------------------
-data_path: "C:/Users/can58/Desktop/FileSyn"
-
-sync_data:
-  inventory: true
-  enderchest: true
-  health: true
-  food_level: true
-  experience: true
-  potion_effects: true
-  gamemode: true 
-
-disabled_worlds: 
-  - 'duel'
-
-auto_save_interval:
-  enabled: true 
-  seconds: 0.5
-  ---------------------------------------------------------
