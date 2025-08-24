@@ -3,15 +3,15 @@ Amaç
 
 FileSyncInventory Minecraft oyuncularının envanter ender chest ve bazı temel durum verilerini (can, açlık, deneyim) kaydedip yüklemesini sağlayan bir veri senkronizasyon eklentisidir Oyuncular sunucuya giriş yaptığında kayıtlı veriler otomatik yüklenir çıkış yaptığında veya belirli aralıklarla otomatik kaydedilir.
 
-⚙️ Özellikler
-🗂️ YAML tabanlı veri kaydı (her oyuncu için ayrı dosya)
-🎒 Envanter senkronizasyonu (itemler Base64’e çevrilip kaydedilir)
-📦 Ender chest senkronizasyonu
-❤️ Oyuncu sağlık ve açlık verileri kaydedilir
-⭐ Deneyim seviyesi & barı saklanır
-🌍 Config üzerinden devre dışı bırakılabilen dünyalar (örneğin creative world’de çalışmasın)
-🔄 Otomatik kaydetme özelliği (saniye/tick cinsinden ayarlanabilir)
-⚡ Folia/Paper uyumlu (asenkron veri yükleme ve global scheduler kullanımı)
+ Özellikler
+ YAML tabanlı veri kaydı (her oyuncu için ayrı dosya)
+ Envanter senkronizasyonu (itemler Base64’e çevrilip kaydedilir)
+ Ender chest senkronizasyonu
+ Oyuncu sağlık ve açlık verileri kaydedilir
+ Deneyim seviyesi & barı saklanır
+ Config üzerinden devre dışı bırakılabilen dünyalar (örneğin creative world’de çalışmasın)
+ Otomatik kaydetme özelliği (saniye/tick cinsinden ayarlanabilir)
+ Folia/Paper uyumlu (asenkron veri yükleme ve global scheduler kullanımı)
 
 Nasıl Çalışır?
 Oyuncu sunucuya katıldığında
